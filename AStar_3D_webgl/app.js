@@ -47,6 +47,10 @@ var depth = 400;
 var container;
 var renderer, scene, camera, stats;
 var particles, uniforms;
+var windowHalfX = window.innerWidth / 2;
+var windowHalfY = window.innerHeight / 2;
+var mouseX = 0;
+var mouseY = 0;
 var PARTICLE_SIZE = 20;
 init();
 loop();
@@ -65,14 +69,14 @@ function init() {
         var weight = (l + 1) / layer_number;
         var resolution = Math.floor(weight * 16);
         geometries.push(new THREE.BoxGeometry(
-          width * weight,
-          height * weight,
-          depth * weight,
-          resolution, resolution, resolution));
+            width * weight,
+            height * weight,
+            depth * weight,
+            resolution, resolution, resolution));
     }
     var vertices = [];
-    for(var i = 0; i<geometries.length;i++){
-      vertices = vertices.concat(geometries[i].vertices);
+    for (var i = 0; i < geometries.length; i++) {
+        vertices = vertices.concat(geometries[i].vertices);
     }
     // var geometry1 = new THREE.BoxGeometry(width, height, depth, 16, 16, 16);
     // var geometry2 = new THREE.BoxGeometry(0.75 * width, 0.75 * height, 0.75 * depth, 12, 12, 12);
@@ -294,10 +298,10 @@ function loop() {
 }
 
 
-
-
 function render() {
-
+    camera.position.x += (mouseX - camera.position.x) * 0.05;
+    camera.position.y += (-mouseY - camera.position.y) * 0.05;
+    camera.lookAt(scene.position);
     // particles.rotation.x += 0.0005;
     // particles.rotation.y += 0.001;
     var geometry = particles.geometry;
@@ -323,20 +327,6 @@ function render() {
         }
     }
 
-    // var gap = 100;
-    // for (var i = 0; i < attributes.size.array.length; i++) {
-    //     if (i >= counter * gap && i <= (counter + 1) * gap) {
-    //         attributes.size.array[i] = PARTICLE_SIZE * 2.;
-    //         attributes.size.needsUpdate = true;
-    //     } else {
-    //         attributes.size.array[i] = PARTICLE_SIZE * 0.5;
-    //         attributes.size.needsUpdate = true;
-    //     }
-    // }
-    // if (counter > 10) counter = 0;
-    // counter++;
-
-
     renderer.render(scene, camera);
 }
 
@@ -349,123 +339,12 @@ function noLoop() {
 
 
 
-/*
-function draw() {
-
-    // Am I still searching?
-    if (openSet.length > 0) {
-
-        // Best next option
-        var winner = 0;
-        for (var i = 0; i < openSet.length; i++) {
-            if (openSet[i].f < openSet[winner].f) {
-                winner = i;
-            }
-        }
-        var current = openSet[winner];
-
-        // Did I finish?
-        if (current === end) {
-            noLoop();
-            console.log("DONE!");
-        }
-
-        // Best option moves from openSet to closedSet
-        removeFromArray(openSet, current);
-        closedSet.push(current);
-
-        // Check all the neighbors
-        var neighbors = current.neighbors;
-        for (var i = 0; i < neighbors.length; i++) {
-            var neighbor = neighbors[i];
-
-            // Valid next spot?
-            //mark
-            if (!closedSet.includes(neighbor) && !neighbor.wall) {
-                var tempG = current.g + heuristic(neighbor, current);
-
-                // Is this a better path than before?
-                var newPath = false;
-                if (openSet.includes(neighbor)) {
-                    if (tempG < neighbor.g) {
-                        neighbor.g = tempG;
-                        newPath = true;
-                    }
-                } else {
-                    neighbor.g = tempG;
-                    newPath = true;
-                    openSet.push(neighbor);
-                }
-
-                // Yes, it's a better path
-                if (newPath) {
-                    neighbor.h = heuristic(neighbor, end);
-                    neighbor.f = neighbor.g + neighbor.h;
-                    neighbor.previous = current;
-                }
-            }
-
-        }
-        // Uh oh, no solution
-    } else {
-        console.log('no solution');
-        noLoop();
-        return;
-    }
-
-    // Draw current state of everything
-    background(255);
-
-    for (var i = 0; i < cols; i++) {
-        for (var j = 0; j < rows; j++) {
-            grid[i][j].show();
-        }
-    }
-
-    for (var i = 0; i < closedSet.length; i++) {
-        closedSet[i].show(color(255, 0, 0, 50));
-    }
-
-    for (var i = 0; i < openSet.length; i++) {
-        openSet[i].show(color(0, 255, 0, 50));
-    }
-
-
-    // Find the path by working backwards
-    //the things in path are the spots
-    path = [];
-    var temp = current;
-    path.push(temp);
-    while (temp.previous) {
-        path.push(temp.previous);
-        temp = temp.previous;
-    }
-
-
-    // for (var i = 0; i < path.length; i++) {
-    // path[i].show(color(0, 0, 255));
-    //}
-
-    // Drawing path as continuous line
-    noFill();
-    stroke(255, 0, 200);
-    strokeWeight(w / 2);
-    beginShape();
-    for (var i = 0; i < path.length; i++) {
-        vertex(path[i].i * w + w / 2, path[i].j * h + h / 2);
-    }
-    endShape();
-
-}
-*/
-
-
-
 //////// EVENT FUNCTIONS ////////
 function onDocumentMouseMove(event) {
     event.preventDefault();
-    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+    mouseX = event.clientX - windowHalfX;
+    mouseY = event.clientY - windowHalfY;
 }
 
 function onWindowResize() {
