@@ -35,8 +35,10 @@ Using Gensim for word2vec(in Python3), and scikit-learn(in Python2) for T-SNE di
 
 <img src = "https://github.com/yulicai/NOC_Intelligence-Learning/raw/master/images/w2v/failure.png" width = "640">
 
-* Source for NOC syllabus Results
+#### Source for NOC syllabus Results
+* Start "evolution", End "techniques"
 
 <img src = "https://github.com/yulicai/NOC_Intelligence-Learning/raw/master/images/w2v/syllabus_s.png" width = "640">
 
+* Start "evolution", End "language"
 <img src = "https://github.com/yulicai/NOC_Intelligence-Learning/raw/master/images/w2v/syllabus_f.png" width = "640">
