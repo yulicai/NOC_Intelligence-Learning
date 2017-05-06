@@ -1,0 +1,577 @@
+The Nature of Code Part 2 (Spring 2017)
+
+Syllabus for Part 2 of Nature of Code: "Intelligence and Learning" at ITP Spring 2017
+
+This syllabus is very much in progress. I'm drawing inspiration from this Coding Train community list of resources.
+
+Class Info
+
+Daniel Shiffman: daniel.shiffman@nyu.edu
+Section 1: Tuesdays, 9:00-11:30am
+Section 2: Wednesdays, 9:00-11:30am
+Office Hours
+Sign up for Mailing List
+Resources and References
+Prerequisites?
+
+Basic familiary with p5.js and Processing.
+Fundamentals of computer programming, equivalent to ICM
+While taking Nature of Code Part 1 is not required, I recommend you familiarize yourself with the following chapters before the first day of class.
+Chapter 1: Vectors
+Chapter 2: Forces
+Chapter 3: Oscillation and Trig
+Chapter 6: Steering Behaviors
+I assume no knowledge whatsoever about AI, machine learning, deep learning and the accompanying math required for the algorithms listed below. After all, I barely know this stuff myself.
+Week 1 - Introduction (March 21/22)
+
+Week 1 Notes
+Week 1 Homework
+Class Intro / Overview
+Algorithms
+Big O notation
+Graphs
+Binary Tree
+Breadth-first Search
+Dijktra's Algorithm
+A* search
+Traveling Salesperson
+plus steering agents!
+Week 2 - Genetic Algorithms (March 28/29)
+
+Week 2 Notes
+Week 2 Homework
+Search
+Evolutionary Design
+Evolutionary Ecosystem
+Week 3 - Classification and Regression (April 4/5)
+
+Week 3 Notes
+Week 3 Homework
+What is Machine Learning
+What is Supervised Learning
+Classification and Regression
+KNN
+Linear Regression and Gradient Descent
+Week 4 - Neural Networks (April 11/12)
+
+Week 4 Notes
+Perceptron
+Multi-Layered Perceptron
+inputs and outputs
+Backpropogation
+Training vs. Testing (MNIST data set)
+What is "Deep Learning"?
+Week 5 - Adding Tensorflow: Convolutional Neural Networks (April 18/19)
+
+Environment Setup
+Week 5 Notes
+Assignment: Project Step 1
+Overview of libraries and frameworks for Deep Learning
+Convolutional Neural Networks for Image Classification (and more)
+Keras and Tensorflow
+Python and Flask
+Flask and p5.js
+Week 6 - Recurrent Neural Networks, NeuroEvolution/Reinforcement Learning (April 25/26)
+
+Week 6 RNN Notes
+Week 6 Bonus NeuroEvolution Notes
+Recurrent Neural Networks for Sequences (text generation)
+Overview of Reinforcement Learning
+Neuro Evolution (evolving ANN weights)
+Week 7 - Project Presentations (May 2/3)
+
+Project Presentations + Documentation
+Policies
+
+Submit assignments by the evening before class to the extent possible.
+Come prepared with questions.
+Put away screens during others' presentations.
+Participate!
+Document!
+Grading:
+40% Class Participation
+40% Quality of assignments
+20% Final project
+For a 2-point class, 2 or more unexcused absences is grounds for failure
+Why this course?
+
+Background on "The Nature of Code"
+Structure / Overview
+
+"Research" presentations
+3 exercises
+1 project
+What is Artificial Intelligence?
+
+"Models for Thinking, Perception, Action" -- Patrick Winston, MIT, Artificial Intelligence, MIT Open CourseWare
+"many things can be AI, including simple programming. AI is the automation of thought" @fchollet
+Artificial Intelligence: A Modern Approach
+What is Machine Learning?
+
+"A field of study that gives computers the ability to learn without being explicitly programmed." Arthur Samuel, 1957 "Samuel Checkers": the world's first self-learning program.
+Data --> Meaning
+Types of Machine Learning
+Rule-based Systems
+Supervised Learning
+Classification, Regression
+Unsupervised Learning
+Clustering
+Reinforcement Learning
+Generative output
+What is Deep Learning?
+
+Machine learning with "deep" neural networks.
+Deep meaning "many layers" deep.
+Ok, what about Artificial General Intelligence?
+
+DeepMind and Q-Learning
+Being Critical
+
+AINOW led by Kate Crawford and Meredith Whittaker
+"What happened to "making the world a better place"?" @hardmaru
+Automated Inference on Criminality using Face Images
+Facebook Restores Iconic Vietnam War Photo It Censored for Nudity
+Main references I'm using for today (and beyond)
+
+Machine Learning for Artists by Gene Kogan and collaborators
+Machine Learning for Musicians and Artists by Rebecca Fiebrink
+Not yet released book by @AndrewGlassner
+Grokking Algorithms
+More and more and more references
+Overview of Syllabus and Topics
+
+What languages / tools?
+
+I will mostly be using Processing and p5.js.
+You can use anything and everything you like for this course.
+We will likely branch out into python when using some machine learning frameworks (like tensorflow).
+Glossary of terms
+
+Statistics and machine learning glossary from the repo wiki.
+
+Wikipedia links:
+
+Sample
+Feature
+Label
+Prediction
+Cost / loss
+Training
+Training set, test set, validation set
+Model
+Learning rate (step size) aka Gradient Descent
+Project References
+
+Moved to this wiki
+Algorithms
+
+Big-O notation
+CS50 video
+Wikipedia article
+Binary Search Tree
+Coding Train video on binary trees
+FreeCodeCamp video
+CS50 video
+Wikipedia article
+Breadth-First Search
+Wikipedia article
+Coding Train BFS tutorial: Part 1, Part 2
+Depth-First Search
+Wikipedia article
+Coding Train DFS Maze Generation: Part1, Part2, Part3, Part4
+Dijkstra's Algorithm
+Computerphile video
+Wikipedia article
+A star
+Coding Train videos: Part1 Part2 Part3
+Computerphile video
+Traveling Salesperson Problem
+Coding Train videos: Part1 Part2 Part3
+Misc Technical Discussion
+
+What is "Prototype"? Coding Train tutorial
+What is an "associative array"? Coding Train tutorial
+Animating algorithm progress vs. "all at once"
+Examples and Homework
+
+All code examples
+Week 1 Homework
+
+What is a "Genetic Algorithm"?
+
+Traditional GA (Search)
+Interactive Selection
+Evolutionary "Ecosystem" Simulation
+Terminology
+
+Darwinian Evolution: Heredity, Variation, Selection
+population
+genotype vs. phenotype
+fitness function
+crossover
+mutation
+History
+
+While computer simulations of evolutionary processes date back to the 1950s, much of what we think of as genetic algorithms (also known as “GAs”) today was developed by John Holland, a professor at the University of Michigan, whose book Adaptation in Natural and Artificial Systems pioneered GA research.
+GA History on Wikipedia
+Related Reading
+
+Nature of Code Chapter 9
+Galanter, Philip. "The Problem with Evolutionary Art Is…" Paper presented at EvoCOMNET’10: The 7th European Event on the Application of Nature-inspired Techniques for Telecommunication Networks and other Parallel and Distributed Systems, April 7-9, 2010.
+Sims, Karl. "Artificial Evolution for Computer Graphics." Paper presented at SIGGRAPH '91: The 18th Annual Conference on Computer Graphics and Interactive Techniques, Las Vegas, NV, July 28-August 2, 1991.
+Sims, Karl. "Evolving Virtual Creatures." Paper presented at SIGGRAPH '94: The 21st Annual Conference on Computer Graphics and Interactive Techniques, Orlando, FL, July 24-29, 1994.
+Wasps, Viruses and New Modes of Evolution
+2 People in 1
+The Sports Gene
+Related videos
+
+Shiffman GA YouTube playlist
+Shiffman GA Presentation @ Kickstarter
+Code examples
+
+p5.js examples
+Processing examples
+Steering Behavior Evolution
+GA for Traveling Salesperson
+Project References
+
+GA plays Flappy Bird
+NeuroEvolution on Autonomous Car Pathing
+Flexible Muscle-Based Locomotion for Bipedal Creatures
+BoxCar2D
+Evolved Virtual Creatures
+Ann Chen & Danne Woo - Galapagos Evolutionary Type Design NOC 2012
+Digital Babylon NOC 2005
+Homework
+
+Week 2 Homework
+What is a "Machine Learning"? (From Andrew Ng's Coursera Course)
+
+"Field of study that gives computers the ability to learn without being explicitly programmed." -- Arthur Samuels (1959). Self-learning and checkers.
+"A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E." -- Tom Mitchell (1998): Maching Learning book.
+Example: classifying images of dogs and cats.
+E = Watching you classify images as dogs or cats.
+T = Classifying images as dogs or cats.
+P = The % of images correctly classified.
+Supervised Learning
+
+From Andrew Ng: "In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output."
+Adapted from Nature of Code Chapter 10: Supervised Learning is a strategy that involves a "teacher" that trains the learning system. For example, consider facial recognition. The "teacher" shows the network a bunch of faces (the teacher already knows the names associated with each face). The learning system makes its guesses and the teacher provides the answers. The learning system can then compare its answers to the known “correct” ones and make adjustments according to its errors.
+Classification and Regression
+
+Classification and regression both involve making a "prediction" based on input data.
+Classification refers to predicting an output with a discrete set of possibilities like a set of categories or labels. For example: "Given an input image, is it a dog or cat?"
+Regression refers to predicting an "continuous" output (a fancy way of saying number). For example: "Given the number of bedrooms, what is the price of a house?" or "Given an input image of a cat, how much does the cat weigh?"
+Terminology
+
+Euclidean distance
+Covariance
+Pearson Correlation coefficient
+Training set
+Learning algorithm
+Model
+Cost function
+Some key JavaScript techniques for this week
+
+Objects as dictionaries (aka Hash Tables, aka Associate Arrays)
+How to sort an array.
+How to pass a function into a function.
+Anonymous Functions
+Chaining
+KNN
+
+"K-Nearest Neighbor" is a machine learning algorithm used for both classification and regression. It is a "lazy learning" algorithm due to the fact that there is really is no learning at all. New data points are classified / valued according to a distance comparison with every data point in a training set.
+Classification of a new data point is calculate according to the class of the majority of its nearest K neighbors. Its nearest K neighbors are determined by a similarity function (my examples use Euclidean distance, see above.)
+In the case of regression, a new data point is assigned a value according the average of the values of its K nearest neighbors.
+It can be advantageous to normalize all data (between say a range of 0 and 1) so that a particular feature with a large range doesn't skew the distance calculations.
+It can also be advantageous to assign a weight to the classification or value of each neighbor according to its distance.
+Chapters 1,2,8 of Collective Intelligence (available via NYU Library)
+Rebecca Fiebrink's Machine Learning for Musicians and Artists Session 1
+KNN Python from scratch Tutorial
+KNN Wikipedia
+KNN in Python with scikit Learn
+Linear Regression with Gradient Descent
+
+Linear Regression, a machine learning technique borrowed from statistics, refers to the process of fitting a linear equation (y = mx + b) to a set of training data (x being the input, y the output). Predictions can be made for new input data by feeding x into the equation and solving for y.
+Multiple Linear Regression refers to the scenario where there are multiple input variables, typically listed as x0, x1, x2, and so on. In this case the equation to solve for is: y = m0x0 + m1x1 + m2x2 + b.
+Polynomial Regression refers to the process of fitting a polynomial equation to the data. This is useful when there is not a linear (straight line) relationship between x and y. An example of a polynomial equation (of order 3) is y = a * x^3 + b * x^2 + c * x + d. There is also exponential, power law, logarithmic and more types of regression!
+While most regression problems can be solved using statistics, for example with a method known as "ordinary least squares", in the case or large data sets with many input variables, the equation cannot easily be estimated in one fell swoop. This is where the machine learning technique known as "gradient descent" comes in. Gradient descent is an algorithmic process which adjusts the parameters of a model according to errors to minimize errors. Performed iteratively overtime, a linear or polynomial regression equation can be estimated. This technique will serve as a fundamental piece of building a neural network simulation and so while it is unnecessary in the simple linear regression examples for this week, it's the perfect place to learn and practice the algorithm.
+Rebecca Fiebrink's Machine Learning for Musicians and Artists Session 2
+Chapter 3 of An Introduction to Statistical Learning (ISL)
+Linear Regression with Gradient Descent video tutorial from Siraj
+Week 1 of Andrew Ng's Machine Learning Coursera course
+Tom Alexander's JS Regression Library
+A video tutorial of the math and implementation by Jyo Pari
+Neural Networks
+
+p5.js examples
+
+Simple Perceptron
+Fully Connected Neural Network (one hidden layer) learning MNIST digits
+Animated Network Visualization
+Additional Processing examples
+
+Nature of Code Chapter 10 Processing examples
+Charles Fried's Neural Network in Processing
+Another Processing Example
+Python examples
+
+Make Your Own Neural Network from Tariq Rashid
+Abishek's Tensorflow Example
+How to freeze a model and serve it with a python API
+History
+
+This short list thanks to Andrey Kurenkov's excellent 'Brief' History of Neural Nets and Deep Learning
+
+In 1943, Warren S. McCulloch, a neuroscientist, and Walter Pitts, a logician, developed the first conceptual model of an artificial neural network. In their paper, "A logical calculus of the ideas immanent in nervous activity,” they describe the concept of a neuron, a single cell living in a network of cells that receives inputs, processes those inputs, and generates an output.
+Hebb's Rule from The Organization of Behavior: A Neuropsychological Theory: "When an axon of cell A is near enough to excite a cell B and repeatedly or persistently takes part in firing it, some growth process or metabolic change takes place in one or both cells such that A's efficiency, as one of the cells firing B, is increased."
+Invented in 1957 by Frank Rosenblatt at the Cornell Aeronautical Laboratory (original paper), a perceptron is the simplest neural network possible: a computational model of a single neuron. A perceptron consists of one or more inputs, a processor, and a single output.
+In 1969, in their book Perceptrons Marvin Minksy and Seymour Papert demonstrate the limitations of perceptrons to solve only "linearly separable" problems. AI Winter #1!
+Paul Werbos's 1974 thesis Beyond Regression: New Tools for Prediction and Analysis in the Behavioral Sciences proposes "backpropagation" as a solution to adjusting weights in the hidden layers of a neural network. The technique was popularized in the 1986 paper Learning representations by back-propagating errors by David Rumelhart, Geoffrey Hinton, and Ronald Williams
+Neural Networks come back with Yann LeCunn's paper Backpropagation Applied to Handwritten Zip Code Recognition. Here's a 1993 video on convolutional neural networks. But AI Winter returns again with the "vanishing gradient problem."
+"Deep Learning" thaws the wintr with new methodologies for training: A fast learning algorithm for deep belief nets by Hinton, Osindero, Teh and raw power with GPUs: Large-scale Deep Unsupervised Learning using Graphics Processors
+Online Reading
+
+Neural Networks (Nature of Code Chapter 10)
+A Quick Introduction to Neural Networks by Ujjwal Karn
+Let’s code a Neural Network from scratch by Charles Fried
+Rolf van Gelder's Neural Network in Processing
+Linear Algebra Cheatsheet by Brendan Fortuner
+A Step by Step Backpropagation Example by Matt Mazur
+A 'Brief' History of Neural Nets and Deep Learning by Andrey Kurenkov
+Additional Reading
+
+Make Your Own Neural Network by Tariq Rashid
+Chapter 22 of The Computational Beauty of Nature by Gary Flake
+Linear Algebra Review
+
+Vectors vs. Matrices
+"Elementwise" operations
+Matrix multiplication
+Transpose
+inputs and outputs
+weights
+Terminology
+
+complex adaptive system
+perceptron
+activation function
+weight
+multi-layered perceptron
+input layer, hidden layer, output layer
+back-propagation
+sigmoid
+gradient descent
+epoch
+deep learning
+Exercise ideas
+
+Redo the three layer network example using an existing matrix library like math.js.
+Instead of using the supervised learning for any of the above examples, can you train a neural network to find the right weights by using a genetic algorithm?
+Visualize a neural network itself. You could start with just the simple perceptron or just go for drawing all the layers of the MNIST training example. How can you show the flow of information using color, geometry, etc.?
+Add a feature that allows the MNIST example to save and reload a model.
+Add a feature that allows users to add digits to the training or test set.
+Try the 3 layer network with your own data.
+Convolutional Neural Networks with Keras plus p5
+
+Examples
+
+p5 and flask
+Visualizing CNN Steps with p5 (in progress)
+CNN1: training and testing digits
+CNN2: classifying digit drawn with p5
+CNN3: classifying images from p5 using pre-trained RESNET-50 model
+Convolutional Neural Networks
+
+An Intuitive Explanation of Convolutional Neural Networks by Ujjwal Karn
+Original 1998 "LetNet5" paper: "Gradient-Based Learning Applied to Document Recognition" by Y. Lecun, L. Bottou, Y. Bengio, P. Haffner
+Online 3D Visualization of a Convolutional Network trained on MNIST by Adam Harley.
+A friendly introduction to Convolutional Neural Networks and Image Recognition, video tutorial by Luis Serrano
+Siraj's CNN video, code on github
+Steps
+
+Convolution, see: Convolution Matrix from GIMP documentation.
+ReLU (aka "Rectified Linear Unit"): A non-linear activation function that turns all negative values into zero.
+Pooling: reduces the resolution / dimensionality of each feature map generated by the convolution. (see "equivarient" below).
+Classification (Fully-Connected Network)
+Terminology
+
+filter (aka kernel)
+feature map
+equivarient: refers to the scale independent nature of the features, allowing objects to be detected in the image at any size / location.
+softmax: an activation function for the final output layer that squashes all values to between 0 and 1 (and adding up to 1). This is perfect for probabilistic outputs like image classifcation.
+one-hot encoding: This is a technique that stores categorical features for classification in binary format. For example, cat: 001, dog: 010, turtle: 100.
+loss: A loss (or cost) function (also known as a cost function) quantifies how the performance of a model on the training set. For example "mean squared error" sums the squared differences between predicted and actual values. See below for loss functions available in keras.
+CNN Parameters
+
+filter size
+depth: number of filters per convolution layer
+stride: number of pixels the filter "sliders over" (i.e. are any pixels skipped to reduce)
+dropout: a technique to help prevent overfitting: randomly sets some input units to 0 (effectively ignoring them) during each training step.
+flatten: refers to taking a multi-dimensional output and "flattening" it into one dimension. For example, a 2D matrix of pixels converted into a 1D array of pixels.
+Examples of Convolutional Network Architectures
+
+VGGNet
+ResNets
+DenseNet, Github
+Tools, frameworks, libraries for this week
+
+Python
+
+Follow these Environment Setup instructions using Miniconda, Python 3, and tensorflow.
+Python Tutorial / Cheatsheet by Stavros Korokithakis.
+Flask
+
+Flask: a python "microframework" for web applications
+pip install Flask
+python server.py flask + p5 example
+Jupyter Project
+
+Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text.
+I'm using Jupyter notebooks to demonstrate and experiment with training machine learning models using keras/tensorflow. After the model is complete, I switch to running the flask server from the command line to communicate with a p5 sketch.
+Numpy
+
+Numpy is a scientific computing package for Python. We will be making use of its "linear algebra" features for storing all inputs and outputs to the machine learning systems as "matrices".
+Numpy Quickstart tutorial
+Some numpy functions I am using
+dot(): docs
+reshape(): docs
+expand_dims(): docs
+Keras / Tensorflow
+
+Tensorflow is an open-source library for machine learning. github
+Keras Keras is a higher-level machine learning API that runs on top of TensorFlow. Keras allows for easy and fast prototyping and supports both convolutional and recurrent networks.
+Things we are using in Keras
+
+Sequential: a linear stack of layers. This is the architecture of your model! Look at Jyo Pari's tutorial using the Sequential model to train the XOR rule!
+Conv2D: a 2D convolutional layer
+Dense: a "regular" fully-connected neural network layer
+Loss functions: keras includes several options for loss functions. For categorical classification scenarios using softmax, you'll typically see a function called "categorical_crossentropy" used.
+Optimizers: This refers to the "gradient descent" algorithm used. In my examples you'll see "RMSProp" (Root Mean Square Propogation) which is a method that adjusts the learning rate for each parameter according to the gradient magnitudes.
+Metrics: This refers to the function that evaluates the performance of your model.
+Saving and Loading a Keras Model
+Some additional image stuff
+
+base64 encoding and decoding with toDataURL()
+PIL (Python Imaging Library)
+
+Examples
+
+RNN1: training and testing LSTM for text generation
+RNN2: Generating RNN text suggestions with p5
+Recurrent Neural Networks
+
+The Unreasonable Effectiveness of Recurrent Neural Networks by Andrej Karpathy
+Andrej Karpathy talk on char-rnn
+Recurrent Neural Networks Tutorial, Part 1 by Denny Britz.
+Anyone Can Learn To Code an LSTM-RNN in Python (Part 1: RNN) by Andrew Trask
+Rohan & Lenny #3: Recurrent Neural Networks & LSTMs
+A Deep Dive into Recurrent Neural Nets by Nikhil Buduma
+Generating Sequences With Recurrent Neural Networks by Alex Graves
+Generating Text with Recurrent Neural Networks by Ilya Sutskever
+Tomas Mikolov's Thesis
+LSTM Networks for Sentiment Analysis
+Recurrent Neural Networks in Tensorflow
+Siraj's RNN video, code on github
+Other projects and resources
+
+Writing with the Machine
+Magenta: Make Music and Art Using Machine Learning
+Handwriting Generation with RNN and p5.js
+Experiments in handwriting
+RNN for generating Baroque Music
+Related open source frameworks:
+
+char-rnn
+torch-rnn
+Recurrent-JS and Recurrent-Node-JS
+NeuralTalk2
+Show and Tell: A Neural Image Caption Generator with Tensorflow
+DenseCap: Fully Convolutional Localization Networks for Dense Captioning
+Why RNN?
+
+ANNs (and CNNs) can't handle "sequential" or "temporal" input.
+ANNs have no memory.
+ANNs have a fixed architecture: fixed input, fixed output
+Examples of data that do not fit ANNs/CNNs
+
+Text (sequence of characters, words)
+Music (sequences of notes, rhythm)
+Drawings (sequences of "vector" paths)
+Terminology
+
+word embeddings: expressing words as vectors of numbers
+"The only way to make sentences work with ANNs would be to have billions of output neurons that each map to a single possible sentence in the permutation of all [sensible] sentences that can be formed by the vocabulary we have. And that doesn’t sound like a good idea." -- Rohan & Lenny #3: Recurrent Neural Networks & LSTMs
+temporal data: data that varies over time (a sequence)
+one-hot encoding: What is one hot encoding and when is it used in data science?
+Vanishing gradient problem. Rohan #4: The vanishing gradient problem
+hidden state: values of hidden vector at a given time
+RNN Parameters
+
+maxlen - length of a "sentence" for inputting into RNN.
+temperature (aka "diversity"): A number in the range of 0-1 (cannot be 0). The temperature is divides probabilities before applying softmax. Lower temperature will result in more "expected" outcomes (high probabilities are even higher). A higher temperature increases the "diversity" of outcomes, but may produce less "correct-sounding" results.
+RNN architectures
+
+one to one (ANN)
+one to many (captioning)
+many to one (sentiment analysis)
+many to many (text, music generation, language translation)
+RNN Steps one to many (for, say, image captioning)
+
+Send in input image x (not a sequence)
+Compute hidden (time=1) vectors based on inputs<->hidden weights.
+Compute hidden (time=2) vectors based on hidden<->hidden weights.
+Compute hidden (time=3) vectors based on hidden<->hidden weights.
+keep going?
+Compute output y (time=1) vectors based on hidden1<->output weights. (could happen right after step 1)
+Compute output y (time=2) vectors based on hidden2<->output weights.
+Compute output y (time=3) vectors based on hidden3<->output weights.
+keep going?
+Incidentally, the above is known as LRCN (Long-Term Recurrent Convolutional Networks)
+Tools, frameworks, libraries for this week's examples
+
+The tools (Python, Flask, p5.js, Keras/Tensorflow) are the same as last week. Below are some additional elements related to RNN.
+
+Python
+
+open() and read() for reading in a text file: python docs
+dictionaries in python for looking up characters by index, and index by characters.
+enumerate(): docs for iterating over all characters.
+Keras/Tensorflow
+
+LSTM: A "Recurrent Layer" (also GRU, SimpleRNN)
+Neuro-Evolution
+
+Examples (in progress)
+
+NeuroEvolution and Flappy Bird, source
+NeuroEvolution and Steering, source
+Other NeuroEvolution examples
+
+Flappy Learning by @xviniette
+Asteroids Learning by @xviniette
+steering agent with p5.js by @lazoviccorp
+Snake NeuroEvolution by @emgoz, video demo
+NeuroEvolution playing Super Mario
+References
+
+Evolving Neural Networks through Augmenting Topologies
+Evolving Novel Behaviors via Natural Selection
+Evolution 101: Neuroevolution by Danielle Whittaker
+NeuroEvolution on Wikipedia
+Neuroevolution of augmenting topologies aka NEAT on Wikipedia
+Reinforcement Learning
+
+References
+
+Demystifying Deep Reinforcement Learning by Tambet Matiisen
+Playing Atari with Deep Reinforcement Learning (original DeepMind paper, video)
+Tools and Frameworks
+
+OpenAI gym
+REINFORCEjs
+Examples / Tutorials
+
+Reinforcement Q-Learning Tutorial
+Siraj's How to Beat Pong Using Policy Gradients video. code (Using OpenAI Universe)
+Udacity's Q Learning example (uses OpenAI gym)
